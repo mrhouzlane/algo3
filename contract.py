@@ -15,6 +15,8 @@ def approval_program():
     op_accept = Bytes("accept")
     op_reveal = Bytes("reveal")
 
+    # Subroutines 
+    
     @Subroutine(TealType.none)
     def reset(account: Expr):
         return Seq(
